@@ -1,0 +1,9 @@
+platform :ios, '10.0'
+use_frameworks!
+
+target 'MBTA App' do
+    pod 'GoogleMaps', '= 2.3.0'
+    pod 'GooglePlaces'
+    pod 'Alamofire', '~> 4.4'
+    pod 'SwiftyJSON'
+end

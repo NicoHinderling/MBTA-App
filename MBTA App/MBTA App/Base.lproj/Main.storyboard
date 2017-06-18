@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Cmw-M5-bCE">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="wDb-Vo-iVK">
+            <objects>
+                <viewController id="Bz9-LF-bHp" customClass="HomeViewController" customModule="MBTA_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TSQ-Jq-rwm"/>
+                        <viewControllerLayoutGuide type="bottom" id="dun-pr-A2d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LBh-I7-o0e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KaY-oh-b6Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6H3-5V-7FG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-172" y="-158"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="ONr-UF-iUj">
+            <objects>
+                <viewController storyboardIdentifier="mapView" id="gK1-td-8WV" customClass="MapViewController" customModule="MBTA_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XpR-zS-4hT"/>
+                        <viewControllerLayoutGuide type="bottom" id="z7W-77-b7a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dm4-m8-8nX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G1M-eZ-mz3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-172" y="550"/>
+        </scene>
+        <!--Favorites View Controller-->
+        <scene sceneID="Oeq-Dh-XkZ">
+            <objects>
+                <viewController id="2bF-Nc-LZ0" customClass="FavoritesViewController" customModule="MBTA_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gdN-3b-9PM"/>
+                        <viewControllerLayoutGuide type="bottom" id="fxg-Uo-bqZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZJz-qF-rFy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VHO-7g-wqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="590" y="551"/>
+        </scene>
+        <!--Nearby View Controller-->
+        <scene sceneID="oYE-pr-dUa">
+            <objects>
+                <viewController id="1jt-Bt-qDh" customClass="NearbyViewController" customModule="MBTA_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FVK-ub-jZ4"/>
+                        <viewControllerLayoutGuide type="bottom" id="73q-g4-WCL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E1H-XZ-9Hj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F6H-ql-xW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1344" y="549"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fl0-wD-2dx">
+            <objects>
+                <navigationController id="Cmw-M5-bCE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="eqb-l5-HAV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Bz9-LF-bHp" kind="relationship" relationship="rootViewController" id="CLL-Ed-VX9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T3v-dg-Lvs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1190" y="-158"/>
+        </scene>
+    </scenes>
+</document>
